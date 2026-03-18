@@ -1,0 +1,115 @@
+/* ibuprofen.recipes — clean, minimal, slightly clinical */
+
+:root {
+  --bg: #fafaf8;
+  --card-bg: #ffffff;
+  --accent: #e05a2b;
+  --ibu-color: #c0392b;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e4e4e0;
+  --font: 'Georgia', serif;
+  --mono: 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  color: var(--accent);
+  font-family: var(--mono);
+}
+
+.tagline {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.recipe-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.8rem;
+}
+
+.recipe-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.recipe-card .meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.recipe-card h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1rem 0 0.4rem;
+  color: var(--muted);
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  padding-left: 1.3rem;
+}
+
+.recipe-card li {
+  margin-bottom: 0.25rem;
+  font-size: 0.97rem;
+}
+
+li.ibu {
+  color: var(--ibu-color);
+  font-weight: bold;
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 2rem; }
+  .recipe-grid { grid-template-columns: 1fr; }
+}
