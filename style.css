@@ -206,3 +206,37 @@ body {
     gap: 2.5rem;
   }
 }
+
+
+/* IBU Conversion Table */
+.ibu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+}
+
+.ibu-table th,
+.ibu-table td {
+  text-align: left;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+}
+
+.ibu-table th {
+  background: var(--bg);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.ibu-table td:last-child {
+  color: var(--ibu);
+  font-weight: 500;
+}
+
+.ibu-table tr:nth-child(even) td {
+  background: #faf9f6;
+}
