@@ -240,3 +240,15 @@ body {
 .ibu-table tr:nth-child(even) td {
   background: #faf9f6;
 }
+
+
+/* Recipe vignette / intro paragraph */
+.vignette {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+  padding: 0.8rem 0 0.8rem 1rem;
+  border-left: 2px solid var(--border);
+}
